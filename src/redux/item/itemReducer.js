@@ -1,10 +1,4 @@
-import {
-  SAVE_DATA,
-  SHOW_MODAL,
-  FILTER_TAG,
-  TAG_VALUE,
-  LOADER,
-} from "./itemType";
+import { SAVE_DATA, FILTER_TAG, TAG_VALUE, LOADER } from "./itemType";
 
 const initialState = {
   data: [],
@@ -20,8 +14,6 @@ export const cardData = (state = initialState, action) => {
       return {
         ...state,
         data: action?.payload,
-        // data: [...state.data, action?.payload],
-        // food: addItemToCard(state.food, action.payload),
       };
     case FILTER_TAG:
       return {
@@ -37,11 +29,6 @@ export const cardData = (state = initialState, action) => {
       return {
         ...state,
         loading: action?.payload,
-      };
-    case SHOW_MODAL:
-      return {
-        ...state,
-        isModalOpen: action?.payload,
       };
     default:
       return { state };

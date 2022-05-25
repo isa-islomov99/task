@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { filterPostsByTag, setValuesOfTag } from "../../redux/item/itemAction";
 import { Select } from "antd";
+import { filterPostsByTag, setValuesOfTag } from "../../redux/item/itemAction";
 const { Option } = Select;
 const children = [];
 
@@ -40,7 +40,7 @@ const Tag = () => {
         onChange={handleChange}
       >
         {children?.length > 0 &&
-          children.map((child) => <Option key={child}>{child}</Option>)}
+          children.map((child, i) => <Option key={child}>{child}</Option>)}
       </Select>
     </div>
   );

@@ -11,7 +11,7 @@ import Loading from "../loading/Loading";
 import EmptyCard from "../../page/empty/EmptyCard";
 
 const PostItem = () => {
-  const { loader } = useFetch("http://jsonplaceholder.typicode.com/comments");
+  useFetch("http://jsonplaceholder.typicode.com/comments");
   const { data, valueOfTag, tagsData, loading } = useSelector(
     (state) => state.cardItems
   );
