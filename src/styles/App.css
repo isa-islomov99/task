@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1890ff;
+  color: #fff;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.navbar__logo_title {
+  color: #fff;
+}
+
+.navbar__items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__list {
+  margin-right: 1rem;
+}
+
+.page_title {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.filter_box_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  z-index: 99;
+}
+
+.search_box {
+  width: 25%;
+}
+
+.filter_by_tag {
+  margin-left: 2rem;
+  width: 25%;
+}
+
+.ant-col {
+  padding: 10px;
+}
+
+.empty_card {
+  display: initial;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_card {
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 20px 50px #d9dbdf;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.main_card:hover {
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.main_card__image {
+  max-width: 100%;
+}
+
+.ant-card-meta-title {
+  padding: 5px 0;
+}
+
+.modal_description {
+  margin-top: 0.8rem;
+}
+
+.pagination {
+  margin-top: 1.3rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 781px) and (max-width: 1280px) {
+  .search_box {
+    width: 40%;
+  }
+  .filter_by_tag {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .filter_box_container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .search_box {
+    width: 100%;
+  }
+
+  .filter_by_tag {
+    margin: 1rem 0 0 0;
+    width: 100%;
+  }
+}
