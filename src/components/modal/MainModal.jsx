@@ -1,7 +1,5 @@
 import React from "react";
 import { Modal } from "antd";
-// import { useSelector, useDispatch } from "react-redux";
-// import { modalVisibility } from "../../redux/item/itemAction";
 
 const MainModal = ({ visible, setVisible, data }) => {
   return (
